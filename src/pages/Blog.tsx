@@ -7,7 +7,7 @@ export function Blog() {
   const { blog, loading } = useSingleBlog({ id: id || "" });
   if (loading) {
     return (
-      <div className="flex items-center flex-col justify-center w-screen h-screen">
+      <div className="flex items-center flex-col justify-center min-h-screen">
         <div className="text-xl font-semibold">Loading...</div>
       </div>
     );

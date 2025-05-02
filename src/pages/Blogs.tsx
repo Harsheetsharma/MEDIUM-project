@@ -6,14 +6,14 @@ export const Blogs = () => {
   const { blogs, loading } = useBlog();
   if (loading) {
     return (
-      <div className="flex items-center flex-col justify-center w-screen h-screen">
+      <div className="flex items-center flex-col justify-center w-full min-h-screen">
         <div className="text-xl font-semibold">Loading...</div>
       </div>
     );
   }
   return (
     <div>
-      <Appbar></Appbar>
+      {/* <Appbar></Appbar> */}
       <div className="flex justify-center">
         <div>
           {blogs.map((blog) => (
